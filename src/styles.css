@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #dcdcdc; /* Cor de fundo cinza claro */
+  min-height: 100vh;
+}
+
+/* Estrutura principal: Sidebar na esquerda e conteúdo na direita */
+app-root {
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}

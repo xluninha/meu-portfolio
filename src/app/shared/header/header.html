@@ -2,24 +2,33 @@
 <nav>
   <ul>
     <li>
- 
-      <a routerLink="/inicio" routerLinkActive="active" title="Início">Início</a>
+      <a routerLink="/inicio" routerLinkActive="active">
+        <img src="assets/home.png" alt="Início" class="icone-menu">
+      </a>
     </li>
     <li>
-      <a routerLink="/perfil" routerLinkActive="active" title="Perfil">Perfil</a>
+      <a routerLink="/perfil" routerLinkActive="active">
+        <img src="assets/perfil.png" alt="Perfil" class="icone-perfil">
+      </a>
     </li>
     <li>
-      <a routerLink="/formacao" routerLinkActive="active" title="Formação">Formação</a>
+      <a routerLink="/formacao" routerLinkActive="active">
+        <img src="assets/formacao.png" alt="Formação" class="icone-menu">
+      </a>
     </li>
     <li>
-      <a routerLink="/projetos" routerLinkActive="active" title="Projetos">Projetos</a>
-    </li>
-    <li>
-      <a routerLink="/contato" routerLinkActive="active" title="Contato">Contato</a>
+      <a routerLink="/projetos" routerLinkActive="active">
+        <img src="assets/projetos.png" alt="Projetos" class="icone-menu">
+      </a>
     </li>
   </ul>
-</nav>
 
+  <div class="contato-item">
+    <a routerLink="/contato" routerLinkActive="active">
+      <img src="assets/contato.png" alt="Contato" class="icone-menu">
+    </a>
+  </div>
+</nav>
 
 <!-- Legenda
  <nav> (Navigation): É a tag semântica que avisa ao navegador e aos leitores de tela que aquele bloco contém os links de navegação principal do site.
@@ -29,3 +38,4 @@
 <li> (List Item): É cada item individual dentro dessa lista.
 
 <a> (Âncora): É a tag de link propriamente dita, responsável por tornar o texto clicável.-->
+

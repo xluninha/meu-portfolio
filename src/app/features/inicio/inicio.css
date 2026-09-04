@@ -1,0 +1,118 @@
+/* ==========================================
+   1. ESTRUTURA E CONTAINER PRINCIPAL
+   Define o layout geral da seção e a linha inferior
+   ========================================== */
+.card-apresentacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #000000;
+}
+
+/* ==========================================
+   2. BLOCO DE CONTEÚDO (TEXTOS)
+   Limita a largura e estiliza a tipografia do perfil
+   ========================================== */
+.conteudo {
+  max-width: 500px;
+}
+
+/* ("Meu Portfólio") */
+.badge {
+  display: inline-block;
+  background-color: #a8a8a8;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+/* Título principal (Nome e Cargo) */
+.conteudo h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+/* Parágrafos explicativos (Biografia) */
+.conteudo p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333333;
+  margin-bottom: 0.3rem;
+}
+
+/* ==========================================
+   3. BOTÕES DE AÇÃO (INTERAÇÃO)
+   Estiliza os botões de navegação 
+   ========================================== */
+
+.acoes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Estilo base compartilhado entre todos os botões */
+.btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Botão Secundário: Fundo branco e borda preta */
+.btn-outline {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+/* Botão Principal: Fundo cinza e borda preta */
+.btn-filled {
+  background-color: #7d7d7d;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+/* ==========================================
+   4. FOTO DE PERFIL
+   Alinhamento e formato circular da imagem
+   ========================================== */
+.foto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Avatar circular perfeito */
+.foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover; /* Impede a imagem de achatar */
+}
+
+.icone-menu {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block; 
+  margin: 0 auto;
+}
+
+nav ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 4px;
+}

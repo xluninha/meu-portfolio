@@ -1,0 +1,54 @@
+nav {
+  width: 70px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mantém o último ícone (Contato) no rodapé */
+  padding: 2rem 0;
+  border-right: 2px solid #000; /* Linha preta vertical */
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+/* Ícone de Contato isolado no final do menu */
+.contato-item {
+  display: flex;
+  justify-content: center;
+}
+
+/* Classe aplicada via routerLinkActive para destacar a página atual */
+a.active {
+  background-color: #b8b8b8;
+}
+
+/* Tamanho fixo para as imagens SVG dos ícones */
+.icone-menu {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
+}
+
+.icone-perfil {
+  width: 48px;
+  height: 48px;
+  max-width: none; 
+}
